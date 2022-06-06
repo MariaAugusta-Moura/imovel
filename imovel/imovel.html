@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<meta>
+<body style="background:aqua ;" >
+    <div style="text-align:center; margin-top: 150px; border: 10px solid black; width: 350px; height: 350px; margin-left:550px; background: white;">
+    <label style="margin-top:60px; color: rgb(0, 0, 0); font-size: 40px;">Cadastramento </label>
+    <form method="get" action= "meu_callback">
+        <br>
+        <label style="color: rgb(0, 0, 0); text-align: center;">Imovel </label>
+        <br>
+        <input name="imovel" type="text"  placeholder="imovel" value="" size="30" maxlength="100"/></label><br />
+        <br>
+        <label style="color: rgb(0, 0, 0); text-align: center">Valor </label>
+        <br>
+        <input name="valor" type="number"  placeholder="valor" size="30" /></label><br />
+        <br><br>
+        <button onclick="deletar()" class="btn btn-light"> <a href="#" onclick="document.getElementById('1').style.display='none'"> Excluir imovel</a></button>
+    <br>
+    <br>
+    <script>
+        function deletar(){
+            alert("deletado"); 
+        }
+ function mostrar() {
+      var id = [document.getElementById("Cadastramento de Imovel").value, document.getElementById("Preço do imovel").value];
+      alert(id);
+      
+    }
+    
+    </script>
+
+    <button onclick="adicionar()" class="btn btn-light"> <a href="#" onclick="document.getElementById('2').style.display='inline'">Adicionar imovel</a></button>
+    <br>
+    <br>
+    <script>
+        function adicionar(){
+            alert("Adicionado"); 
+        }
+        
+    </script>
+    <button delete><a href="#" onclick="mostrar()" class="btn btn-light"> Limpar Formulario </a></button>
+    
+    </form>
+</div>
+    </div>
+</body>
+</html>
